@@ -1,0 +1,358 @@
+body {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode h1, 
+.dark-mode h2,
+.dark-mode p, 
+.dark-mode li {
+    color: white;
+}
+
+.dark-mode h1:hover {
+    color: #0072ff;
+}
+
+.dark-mode .Card,
+.dark-mode .card {
+    background-color: #1f1f1f;
+    color: white;
+    border-color: #444;
+}
+
+.dark-mode nav, 
+.dark-mode footer, 
+.dark-mode .footer-to-top {
+    background-color: #1a1a1a;
+}
+
+.dark-mode button {
+    background-color: #2563EB;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #1D4ED8;
+}
+
+#achv{
+    display: none;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#darkBtn {
+    background-color: rgb(99, 99, 98);
+    color: white;
+}
+
+#darkBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    border-radius: 50px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.02);
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+
+#btn{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: rgb(6, 30, 139);
+}
+
+#btn2{
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+
+}
+
+#btn2:hover {
+    background-color: rgb(6, 30, 139);
+}
+
+#Hidebtn:hover {
+    background-color: blue;
+
+}
+
+h2 {
+    color: darkblue;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    scroll-margin-top: 120px;
+}
+
+h2:hover {
+    color: #00C853;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    margin: auto; 
+    border-radius: 60%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px black;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #0072ff, #3ec500fd, #ff0000);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.logo:hover {
+    color: gold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5px;
+}
+
+nav:hover {
+    background-color: red;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+#about {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    scroll-margin-top: 200px;
+    transition: 0.3s;
+}
+
+#goals {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translate(-5px);
+}
+
+.skills-card li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#dynace {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.container2 {
+    display: flex;
+    gap: 15px
+}
+
+.Card, .project-card {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 8px gray;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.Card:hover {
+    transform: scale(1.02);
+}
+
+#projects {
+    color: darkblue;
+}
+
+.dark-mode #projects {
+    color: white;
+}
+
+#projects:hover{
+    color: #00C853;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: blue;
+    color: white;
+}
+
+.center-button {
+    display: block;
+    margin: auto;
+}
+
+#contact {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    margin: 40px 0;
+}
+
+footer {
+    margin-top: 30px;
+    background: linear-gradient(90deg, #0072ff, #3ec500fd, #ff0000);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer:hover {
+    background-color: red;
+}
+
+.footer-to-top {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #0072ff, #3ec500fd, #ff0000);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer-to-top:hover {
+    background-color: red;
+}
+
+.footer-to-top a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-to-top a:hover {
+    color: yellow;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        align-items: center;
+        gap: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
