@@ -14,7 +14,7 @@
             <a href="index.html#skills">Skills</a>
             <a href="index.html#goals">Goals</a>
             <a href="index.html#dynace">Dynace</a>
-            <a href="projects.html">Projects</a>
+            <a href="index.html#projects">Projects</a>
             <a href="index.html#contact">Contact</a>
             <a href="index.html#achievements">Achievements</a>
         </div>
@@ -25,7 +25,7 @@
          I plan to build as I continue learning programming and web development.</p>
 
     <div class="container">
-        <div class="project-card">
+        <div class="project-card completed">
             <h2>Personal Portfolio Website</h2>
 
             <p>
@@ -36,10 +36,19 @@
                 in technology and business.
             </p>
 
-            <p>Status: Completed ✅</p>
+            <button class="details-button" data-project="portfolio">View Details</button>
+
+            <div class="project-details">
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+                <p><strong>What I learned:</strong> Building responsive layouts, styling with CSS, and adding interactive features with JavaScript.</p>
+
+                <p class="completed-status"><strong>Status:</strong> Completed ✅</p>
+            </div>
+            
         </div>
 
-        <div class="project-card">
+        <div class="project-card coming-soon">
             <h2>Future Java Projects</h2>
 
             <p>
@@ -49,8 +58,18 @@
                 continue improving my programming abilities.
             </p>
 
-            <p>Status: In Progress 🔄</p>
+            <button class="details-button" data-project="java">View Details</button>
+
+            <div class="project-details">
+                <p><strong>Technologies: </strong>Java</p>
+
+                <p class="coming-soon-status"><strong>Status: </strong>Coming soon</p>
+
+                <p><strong>Plan: </strong>Resume Java programming and build practical projects as I continue learning.</p>
+            </div>
+
         </div>
+
     </div><br>
 
     <hr>
@@ -63,5 +82,6 @@
         <a href="#top">Back to Top ˄</a>
     </footer>
     
+    <script src="app.js"></script>
 </body>
 </html>
