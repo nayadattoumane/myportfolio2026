@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
@@ -207,6 +211,16 @@ nav a:hover{
     transform: translate(-5px);
 }
 
+.contact-card a {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
 .skills-card li{
     margin-bottom: 10px;
     font-size: 18px;
@@ -253,6 +267,36 @@ li {
     color: darkblue;
 }
 
+.project-card.completed {
+    border-left: 5px solid #28a745;
+}
+
+.project-card.coming-soon {
+    border-left: 5px solid #f0ad4e;
+}
+
+.completed-status {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.coming-soon-status {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+.project-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.project-details.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
 .dark-mode #projects {
     color: white;
 }
@@ -261,7 +305,7 @@ li {
     color: #00C853;
 }
 
-.project-card:hover {
+.projects-card:hover {
     transform: scale(1.02);
 }
 
@@ -278,13 +322,17 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    background-color: blue;
+    background-color: #024184;
     color: white;
 }
 
 .center-button {
     display: block;
     margin: auto;
+}
+
+#achvmnts {
+    scroll-margin-top: 120px;
 }
 
 #contact {
@@ -355,4 +403,6 @@ footer:hover {
     .container {
         flex-direction: column;
     }
+
+    
 }
