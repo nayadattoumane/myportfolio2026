@@ -1,7 +1,9 @@
 // Changing the text content of the heading element with id 'about'
 const heading = document.getElementById('about');
 
-heading.innerHTML = "Hello, I'm Nayad Attoumane, <br>Software Engineering Student from Comoros 🇰🇲<br> <br>Welcome to My Portfolio!";
+if (heading) {
+    heading.innerHTML = "Hello, I'm Nayad Attoumane, <br>Software Engineering Student from Comoros 🇰🇲<br> <br>Welcome to My Portfolio!";
+} 
 
 // run the function when the button is clicked
 const button = document.getElementById("btn");
@@ -11,7 +13,9 @@ function changeHeading() {
     button.textContent = "visited ✅";
 }
 
-button.addEventListener("click", changeHeading);
+if (button) {
+    button.addEventListener("click", changeHeading);
+}
 
 const button2 = document.getElementById("btn2");
 
@@ -19,7 +23,9 @@ function showAboutMe() {
     button2.textContent = "I am a Software Engineering Student from Comoros 🇰🇲 studying in Uganda 🇺🇬. I am passionate about technology, content creation, and business. I enjoy learning new skills and applying them to real-world projects. In my free time, I like to explore new ideas and work on personal projects that challenge me to grow.";
 }
 
-button2.addEventListener("click", showAboutMe);
+if (button2) {
+    button2.addEventListener("click", showAboutMe);
+}
 
 const achievements = document.getElementById("achv");
 
@@ -35,7 +41,9 @@ function hideAchievements() {
     }
 }
 
-hideButton.addEventListener("click", hideAchievements);
+if (hideButton) {
+    hideButton.addEventListener("click", hideAchievements);
+}
 
 const quotes = [
     "Consistency is key to success.",
@@ -63,7 +71,9 @@ function nextQuote() {
 
 }
 
-newQuote.addEventListener("click", nextQuote);
+if (newQuote) {
+    newQuote.addEventListener("click", nextQuote);
+}
 
 const darkButton = document.getElementById("darkBtn");
 
@@ -83,5 +93,63 @@ function switchToDarkMode() {
     }
 }
 
-darkButton.addEventListener("click", switchToDarkMode);
+if (darkButton) {
+    darkButton.addEventListener("click", switchToDarkMode);
+}
 
+// =====================================================
+// SMOOTH SCROLLING
+// =====================================================
+
+const smoothScrollLinks = document.querySelectorAll('a[href*="#"]');
+
+smoothScrollLinks.forEach(link => {
+    link.addEventListener("click", event => {
+            const url = new URL(link.href);
+
+            if (url.pathname === window.location.pathname) {
+                event.preventDefault();
+
+                const targetSection = document.querySelector(url.hash);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            }
+        });
+});
+
+// ================================== PROJECT CARDS ==============================================
+
+const detailsButtons = document.querySelectorAll(".details-button");
+
+detailsButtons.forEach((button) => {
+    const projectCard = button.closest(".project-card");
+    const projectDetails = projectCard.querySelector(".project-details");
+
+    button.addEventListener("click", () => {
+        projectDetails.classList.toggle("show");
+
+        if (projectDetails.classList.contains("show")) {
+            button.textContent = "Hide Details";
+        } else {
+            button.textContent = "View Details";
+        }
+    });
+});
+
+/*const detailsButton = document.querySelector(".details-button");
+const projectDetails = document.querySelector(".project-details");
+
+if (detailsButton && projectDetails) {
+
+    detailsButton.addEventListener("click", () => {
+
+        console.log("BUTTON WORKS");
+
+        projectDetails.classList.toggle("show");
+
+    });
+} */
